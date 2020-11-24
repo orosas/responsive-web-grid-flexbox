@@ -1,0 +1,80 @@
+/* Utilities */
+
+/* Nota: Se mantiene el container de 68.75rem al incrementar el tamaño del navegador */
+.container {
+    /* Nota: Mantiene el container de cierto tamaño para centrarlo y que quede espacio
+            a los costados. */
+    max-width: 68.75rem;
+    border: 1px white solid;
+    /* Nota: margin 0 auto se utiliza para centrar el container de manera horizontal */
+    margin: 0 auto;
+    /* Nota: Debido al margin de h1, se encuentra espacio en la parte superior.
+        Se elimina con: */
+    overflow: auto;
+    padding: 0 2.5rem;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: .625rem;
+    box-shadow: 0 .1875rem 0.625rem rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* CSS de butones en div showcase */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.9rem;
+    cursor: pointer;
+    /* background: var(--primary-color); */
+    background: #ec5858;
+    color: #fff;
+    border: none;
+    border-radius: .4rem;
+}
+
+.btn-outline {
+    /* Nota: transparent forma un botón del mismo color que el var(--primary-color) */
+    /* background-color: transparent; */
+    border: 1px #fff solid;
+    color: #000;
+    background-color: #edf285;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+/* Nota: Menu queda de forma vertical
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    /* Nota: align-content trata a todos los objectos como uno solo
+    align-content: space-around; */
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
