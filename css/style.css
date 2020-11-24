@@ -68,6 +68,12 @@ code, pre {
     padding: 0.625rem;
 }
 
+/* Nota: Oculta campo agregado a form de index.html, por Netlify */
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 /* Navbar */
 
 .navbar {

@@ -45,7 +45,16 @@
             </div>
             <div class="showcase-form card">
                 <h2>Solicitar Información</h2>
-                <form>
+                
+                <!-- Nota: Atributos name, method data-netlify agregados para 
+                        el uso de Netlify -->
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <!-- Nota: Campos agregado para upload en Netlify -->
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
+
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name">
                     </div>
