@@ -19,5 +19,7 @@ https://github.com/bradtraversy/loruki-website
     - CSS para cards.
     - Netlify deployment. Inicia en minuto 1:56:41
 
+Deployed at Netlify
+https://serene-torvalds-d95053.netlify.app/index.html
 
 _Noviembre 2020 Omar Rosas_
